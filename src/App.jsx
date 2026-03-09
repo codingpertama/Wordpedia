@@ -26,6 +26,9 @@ export default function App() {
       setLoading(false);
     } catch (error) {
       console.error(error.message);
+      setResult({
+    title: "No Definitions Found"
+  });
       setLoading(false);
     } 
   }

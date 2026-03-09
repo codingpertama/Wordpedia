@@ -5,6 +5,16 @@ export default function WordResult({ result }) {
 
     if (!result) return null
 
+    if (result.title === "No Definitions Found") {
+        return (
+            <section className="max-w-4xl mx-auto px-6 py-10 bg-white flex items-center justify-center">
+                <p className="text-gray-600 text-xl font-semibold">
+                    Word is not found.
+                </p>
+            </section>
+        )
+    }
+
     const word = result[0]
     const [showExample, setShowExample] = useState(true)
 
@@ -38,7 +48,7 @@ export default function WordResult({ result }) {
                     <p className="mb-2">{meaning.definitions[0]?.definition}</p>
                     {showExample && (
                         <p>
-                            Example: {meaning.definitions[0]?.example}
+                            Example: {meaning.definitions[0]?.example || "There is no Example."} 
                         </p>
                     )}
                 </div>

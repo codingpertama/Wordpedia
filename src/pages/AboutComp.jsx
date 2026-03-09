@@ -4,7 +4,6 @@ export default function AboutComp() {
 
             <div className="max-w-5xl mx-auto">
 
-                {/* HERO */}
                 <div className="mb-20">
                     <div className="flex items-center gap-4 mb-6">
                         <div className="text-2xl font-bold">____</div>
@@ -28,7 +27,6 @@ export default function AboutComp() {
                     </p>
                 </div>
 
-                {/* FEATURES */}
                 <div className="grid md:grid-cols-3 gap-8 mb-24">
 
                     <div className="border border-gray-200 p-6 hover:shadow-md transition">
@@ -63,7 +61,6 @@ export default function AboutComp() {
 
                 </div>
 
-                {/* TECH STACK */}
                 <div className="border-t border-gray-200 pt-12">
 
                     <h2 className="text-2xl font-semibold mb-6">
